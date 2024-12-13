@@ -11,4 +11,8 @@ export default defineConfig({
     timeout: 120000,
     reuseExistingServer: !process.env.CI,
   },
+  reporter: [
+    ["list"], // Вывод в консоль
+    ["html", { outputFolder: "playwright-report", open: "never" }], // HTML-отчет
+  ],
 });
