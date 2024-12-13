@@ -7,12 +7,12 @@ export default defineConfig({
   },
   webServer: {
     command: "vite preview",
-    port: 4173, // стандартный порт для Vite Preview
+    port: 4173,
     timeout: 120000,
     reuseExistingServer: !process.env.CI,
   },
   reporter: [
-    ["list"], // Вывод в консоль
-    ["html", { outputFolder: "playwright-report", open: "never" }], // HTML-отчет
+    ["list"],
+    ["html", { outputFolder: "playwright-report", open: "never" }],
   ],
 });
