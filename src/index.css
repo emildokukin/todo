@@ -12,10 +12,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
 }
 
 textarea::placeholder,
 input::placeholder {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
 }
